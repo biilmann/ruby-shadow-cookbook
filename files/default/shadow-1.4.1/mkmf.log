@@ -1,0 +1,239 @@
+have_func: checking for getspent()... -------------------- no
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘getspent’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))getspent; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+Undefined symbols:
+  "_getspent", referenced from:
+      _t in cca6FWEH.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { getspent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sgetspent()... -------------------- no
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘sgetspent’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))sgetspent; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+Undefined symbols:
+  "_sgetspent", referenced from:
+      _t in ccT9YPSd.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { sgetspent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for fgetspent()... -------------------- no
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘fgetspent’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))fgetspent; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+Undefined symbols:
+  "_fgetspent", referenced from:
+      _t in ccEPAFwZ.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { fgetspent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for setspent()... -------------------- no
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘setspent’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))setspent; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+Undefined symbols:
+  "_setspent", referenced from:
+      _t in ccg53S5V.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { setspent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for endspent()... -------------------- no
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘endspent’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))endspent; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+Undefined symbols:
+  "_endspent", referenced from:
+      _t in ccXtRszq.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { endspent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for lckpwdf()... -------------------- no
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘lckpwdf’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))lckpwdf; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+Undefined symbols:
+  "_lckpwdf", referenced from:
+      _t in ccDBVgbt.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { lckpwdf(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ulckpwdf()... -------------------- no
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ulckpwdf’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ulckpwdf; return 0; }
+/* end */
+
+"gcc -o conftest -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/x86_64-darwin10.4.0 -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1/ruby/backward -I/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    conftest.c  -L. -L/Users/mbc/.rvm/rubies/ruby-1.9.2-p0/lib      -lruby.1.9.1-static  -lpthread -ldl -lobjc "
+Undefined symbols:
+  "_ulckpwdf", referenced from:
+      _t in ccOf7niA.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ulckpwdf(); return 0; }
+/* end */
+
+--------------------
+
